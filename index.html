@@ -1,17 +1,310 @@
-<!doctype html>
-<html lang="">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KORE - Corina Herran Portfolio</title>
-    <meta name="description" content="" />
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corina KORE Herran | Directora de Arte</title>
+    <meta name="description" content="Corina Herran - Directora de Arte en audiovisual. Largometrajes, cortometrajes y videoclips en País Vasco y Argentina.">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="./assets/index-CI4LjB-T.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-CQxLeEcy.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fafaf9;
+            color: #292524;
+        }
+        .font-serif {
+            font-family: 'Cormorant Garamond', serif;
+        }
+        .project-item {
+            transition: all 0.3s ease;
+            border-left: 2px solid transparent;
+            padding-left: 0;
+        }
+        .project-item:hover {
+            transform: translateX(8px);
+            border-left-color: #78716c;
+            padding-left: 1rem;
+        }
+        .link-animated {
+            position: relative;
+            text-decoration: none;
+            color: #78716c;
+            transition: color 0.3s ease;
+        }
+        .link-animated::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            bottom: -2px;
+            left: 0;
+            background-color: #292524;
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.3s ease;
+        }
+        .link-animated:hover {
+            color: #292524;
+        }
+        .link-animated:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+
+    <header class="pt-24 pb-16 px-6 md:px-12 lg:px-24 border-b border-stone-200">
+        <div class="max-w-5xl mx-auto">
+            <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl font-light tracking-tight mb-4">
+                Corina <span class="italic text-stone-500">/KORE/</span> Herran
+            </h1>
+            <p class="text-lg md:text-xl text-stone-500 font-light tracking-widest uppercase">
+                Dirección de Arte
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 md:px-12 lg:px-24 py-16">
+
+        <section class="mb-16 max-w-3xl">
+            <h2 class="font-serif text-3xl md:text-4xl font-light mb-6">Sobre mí</h2>
+            <p class="text-stone-600 leading-relaxed text-lg font-light">
+                Nacida en Argentina en 1995. Licenciada en Artes Plásticas orientación escenografía por la Universidad Nacional de La Plata (2019). Su carrera profesional se orientó hacia el audiovisual desde 2015, desarrollando trabajos como Directora de Arte en largometrajes, cortometrajes, videoclips y campañas creativas. Actualmente reside en Vitoria-Gasteiz (País Vasco).
+            </p>
+        </section>
+
+        <section class="mb-16 pb-12 border-b border-stone-200">
+            <h2 class="font-serif text-3xl md:text-4xl font-light mb-6">Contacto</h2>
+            <div class="flex flex-col md:flex-row gap-6">
+                <a href="mailto:corinaherran@gmail.com" class="link-animated text-lg">corinaherran@gmail.com</a>
+                <a href="https://www.instagram.com/koreherran/" target="_blank" class="link-animated text-lg">@koreherran</a>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="font-serif text-4xl md:text-5xl font-light mb-12">Trabajos</h2>
+
+            <div class="mb-12">
+                <h3 class="text-xs uppercase tracking-[0.2em] text-stone-400 mb-8 font-medium">Próximamente</h3>
+                
+                <div class="project-item mb-8">
+                    <h4 class="font-serif text-2xl md:text-3xl font-normal mb-2">Alokahiru</h4>
+                    <p class="text-stone-600 mb-1"><span class="text-stone-400">Serie</span> — Alba Lozano & Nitya Lopez</p>
+                    <p class="text-stone-400 text-sm mb-2">Bilbao, 2026</p>
+                    <p class="text-stone-800 font-medium">Directora de Arte</p>
+                </div>
+
+                <div class="project-item mb-8">
+                    <h4 class="font-serif text-2xl md:text-3xl font-normal mb-2">Aho Belzta</h4>
+                    <p class="text-stone-600 mb-1"><span class="text-stone-400">Cortometraje</span> — Alba Lozano</p>
+                    <p class="text-stone-400 text-sm mb-2">Zumaia, 2025</p>
+                    <p class="text-stone-800 font-medium">Directora de Arte</p>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-xs uppercase tracking-[0.2em] text-stone-400 mb-8 font-medium">Realizados</h3>
+
+                <div class="space-y-10">
+
+                    <div class="project-item">
+                        <h4 class="font-serif text-2xl md:text-3xl font-normal mb-2">Cuatro paredes</h4>
+                        <p class="text-stone-600 mb-1"><span class="text-stone-400">Largometraje</span> — Ibon Cormenzana</p>
+                        <p class="text-stone-400 text-sm mb-2">Orduña, País Vasco — Noviembre 2023</p>
+                        <p class="text-stone-800 font-medium mb-3">Directora de Arte</p>
+                        <a href="https://www.imdb.com/es-es/title/tt34896955/" target="_blank" class="text-xs uppercase tracking-wider text-stone-400 hover:text-stone-600 link-animated">Ver en IMDb →</a>
+                    </div>
+
+                    <div class="project-item">
+                        <h4 class="font-serif text-2xl md:text-3xl font-normal mb-2">Llamame sinsorga</h4>
+                        <p class="text-stone-600 mb-1"><span class="text-stone-400">Documental</span> — Al Borde Films</p>
+                        <p class="text-stone-400 text-sm mb-2">2023</p>
+                        <p class="text-stone-800 font-medium mb-3">Directora de Arte</p>
+                        <a href="https://albordefilms.com/proyecto/llamame-sinsorga/" target="_blank" class="text-xs uppercase tracking-wider text-stone-400 hover:text-stone-600 link-animated">Ver proyecto →</a>
+                    </div>
+
+                    <div class="project-item">
+                        <h4 class="font-serif text-2xl md:text-3xl font-normal mb-2">Hate Songs</h4>
+                        <p class="text-stone-600 mb-1"><span class="text-stone-400">Largometraje</span> — Alejo Levis</p>
+                        <p class="text-stone-400 text-sm mb-2">Bilbao, País Vasco</p>
+                        <p class="text-stone-800 font-medium mb-3">Directora de Arte</p>
+                        <a href="https://www.imdb.com/es-es/title/tt26924096/" target="_blank" class="text-xs uppercase tracking-wider text-stone-400 hover:text-stone-600 link-animated">Ver en IMDb →</a>
+                    </div>
+
+                    <div class="project-item">
+                        <h4 class="font-serif text-2xl md:text-3xl font-normal mb-2">Hadas</h4>
+                        <p class="text-stone-600 mb-1"><span class="text-stone-400">Cortometraje</span> — Beatriz Da Silva</p>
+                        <p class="text-stone-400 text-sm mb-2">Vitoria-Gasteiz, País Vasco — Junio 2022</p>
+                        <p class="text-stone-800 font-medium mb-3">Directora de Arte</p>
+                        <a href="https://www.imdb.com/es-es/title/tt31522695/" target="_blank" class="text-xs uppercase tracking-wider text-stone-400 hover:text-stone-600 link-animated">Ver en IMDb →</a>
+                    </div>
+
+                    <div class="project-item">
+                        <h4 class="font-serif text-2xl md:text-3xl font-normal mb-2">20.000 especies de abejas</h4>
+                        <p class="text-stone-600 mb-1"><span class="text-stone-400">Largometraje</span> — Esti Urresola</p>
+                        <p class="text-stone-400 text-sm mb-2">Junio/Julio/Agosto 2022</p>
+                        <p class="text-stone-800 font-medium mb-3">Atrezzista de Set</p>
+                        <a href="https://www.imdb.com/es-es/title/tt21113962/" target="_blank" class="text-xs uppercase tracking-wider text-stone-400 hover:text-stone-600 link-animated">Ver en IMDb →</a>
+                    </div>
+
+                    <div class="project-item">
+                        <h4 class="font-serif text-2xl md:text-3xl font-normal mb-2">Influencer</h4>
+                        <p class="text-stone-600 mb-1"><span class="text-stone-400">Cortometraje</span> — Nerea Torrijos</p>
+                        <p class="text-stone-400 text-sm mb-2">Araba-Vizcaya, País Vasco — Febrero 2022</p>
+                        <p class="text-stone-800 font-medium">Co-Directora de Arte</p>
+                    </div>
+
+                    <div class="project-item">
+                        <h4 class="font-serif text-2xl md:text-3xl font-normal mb-2">Super Jodidos</h4>
+                        <p class="text-stone-600 mb-1"><span class="text-stone-400">Cortometraje</span> — Gaston Haag</p>
+                        <p class="text-stone-400 text-sm mb-2">Bilbao, Vizcaya — Diciembre 2021</p>
+                        <p class="text-stone-800 font-medium">Directora de Arte</p>
+                    </div>
+
+                    <div class="project-item">
+                        <h4 class="font-serif text-2xl md:text-3xl font-normal mb-2">Psicópatas de clase media</h4>
+                        <p class="text-stone-600 mb-1"><span class="text-stone-400">Cortometraje</span> — Albaro Herrero & Hector Amado</p>
+                        <p class="text-stone-400 text-sm mb-2">Gasteiz, Araba — Diciembre 2021</p>
+                        <p class="text-stone-800 font-medium">Directora de Arte</p>
+                    </div>
+
+                    <div class="project-item">
+                        <h4 class="font-serif text-2xl md:text-3xl font-normal mb-2">Cuerdas</h4>
+                        <p class="text-stone-600 mb-1"><span class="text-stone-400">Cortometraje</span> — Esti Urresola</p>
+                        <p class="text-stone-400 text-sm mb-2">Muzkis, Vizcaya — Noviembre 2021</p>
+                        <p class="text-stone-800 font-medium">Directora de Arte</p>
+                    </div>
+
+                    <div class="project-item">
+                        <h4 class="font-serif text-2xl md:text-3xl font-normal mb-2">Yuyu</h4>
+                        <p class="text-stone-600 mb-1"><span class="text-stone-400">Videoclip</span> — Akatz (Productora Dosis)</p>
+                        <p class="text-stone-400 text-sm mb-2">Bilbo, Vizcaya</p>
+                        <p class="text-stone-800 font-medium">Directora de Arte</p>
+                    </div>
+
+                    <div class="project-item">
+                        <h4 class="font-serif text-2xl md:text-3xl font-normal mb-2">Etxea</h4>
+                        <p class="text-stone-600 mb-1"><span class="text-stone-400">Cortometraje</span> — Mikel Rueda</p>
+                        <p class="text-stone-400 text-sm mb-2">Bilbao, Vizcaya — Febrero 2021</p>
+                        <p class="text-stone-800 font-medium">Dirección de Arte</p>
+                    </div>
+
+                    <div class="project-item">
+                        <h4 class="font-serif text-2xl md:text-3xl font-normal mb-2">Los días que nunca fueron</h4>
+                        <p class="text-stone-600 mb-1"><span class="text-stone-400">Cortometraje</span> — Kevin Iglesias</p>
+                        <p class="text-stone-400 text-sm mb-2">Bilbao, Vizcaya — Enero 2021</p>
+                        <p class="text-stone-800 font-medium">Dirección de Arte</p>
+                    </div>
+
+                    <div class="project-item">
+                        <h4 class="font-serif text-2xl md:text-3xl font-normal mb-2">Bihar</h4>
+                        <p class="text-stone-400 text-sm mb-2">Bilbao, Bizkaia — Agosto 2021</p>
+                        <p class="text-stone-800 font-medium mb-3">Directora de Arte</p>
+                        <a href="https://www.youtube.com/watch?v=3spfarmUrIU" target="_blank" class="text-xs uppercase tracking-wider text-stone-400 hover:text-stone-600 link-animated">Ver en YouTube →</a>
+                    </div>
+
+                    <div class="project-item">
+                        <h4 class="font-serif text-2xl md:text-3xl font-normal mb-2">Con este cuerpo en este mundo</h4>
+                        <p class="text-stone-600 mb-1"><span class="text-stone-400">Producción Argentina</span></p>
+                        <p class="text-stone-400 text-sm mb-2">Vitoria-Gasteiz, Araba — Abril/Agosto 2021</p>
+                        <p class="text-stone-800 font-medium mb-3">Co-Vestuarista</p>
+                        <a href="https://www.youtube.com/watch?v=lVSmE36mBfg" target="_blank" class="text-xs uppercase tracking-wider text-stone-400 hover:text-stone-600 link-animated">Ver en YouTube →</a>
+                    </div>
+
+                    <div class="project-item">
+                        <h4 class="font-serif text-2xl md:text-3xl font-normal mb-2">Carnívoro</h4>
+                        <p class="text-stone-600 mb-1"><span class="text-stone-400">Cortometraje</span> — Lander Castro</p>
+                        <p class="text-stone-400 text-sm mb-2">Bilbao, Vizcaya — Diciembre 2020/Enero 2021</p>
+                        <p class="text-stone-800 font-medium">Dirección de Arte, diseño y construcción de decorado</p>
+                    </div>
+
+                    <div class="project-item">
+                        <h4 class="font-serif text-2xl md:text-3xl font-normal mb-2">Spot FANT BILBAO</h4>
+                        <p class="text-stone-400 text-sm mb-2">Bilbao, Bizkaia — Octubre 2020</p>
+                        <p class="text-stone-800 font-medium mb-3">Directora de Arte</p>
+                        <a href="https://www.youtube.com/watch?v=yB6jwXv6lnY" target="_blank" class="text-xs uppercase tracking-wider text-stone-400 hover:text-stone-600 link-animated">Ver en YouTube →</a>
+                    </div>
+
+                    <div class="project-item">
+                        <h4 class="font-serif text-2xl md:text-3xl font-normal mb-2">Teloia</h4>
+                        <p class="text-stone-600 mb-1"><span class="text-stone-400">Videoclip</span> — Liher</p>
+                        <p class="text-stone-400 text-sm mb-2">Bilbao, Bizkaia — Febrero 2020</p>
+                        <p class="text-stone-800 font-medium mb-3">Co-Directora de Arte</p>
+                        <a href="https://www.youtube.com/watch?v=6HcQQWO0cv4" target="_blank" class="text-xs uppercase tracking-wider text-stone-400 hover:text-stone-600 link-animated">Ver en YouTube →</a>
+                    </div>
+
+                    <div class="project-item">
+                        <h4 class="font-serif text-2xl md:text-3xl font-normal mb-2">Teloia</h4>
+                        <p class="text-stone-600 mb-1"><span class="text-stone-400">Corto promocional</span> — Liher</p>
+                        <p class="text-stone-400 text-sm mb-2">Bilbao, Bizkaia — Enero 2020</p>
+                        <p class="text-stone-800 font-medium mb-3">Directora de Arte</p>
+                        <a href="https://www.youtube.com/watch?v=fq7c2Tm8Ky0" target="_blank" class="text-xs uppercase tracking-wider text-stone-400 hover:text-stone-600 link-animated">Ver en YouTube →</a>
+                    </div>
+
+                    <div class="project-item">
+                        <h4 class="font-serif text-2xl md:text-3xl font-normal mb-2">El Comitè</h4>
+                        <p class="text-stone-600 mb-1"><span class="text-stone-400">Cortometraje</span> — Pablo Pinedo</p>
+                        <p class="text-stone-400 text-sm mb-2">Vitoria-Gasteiz, Araba — Septiembre 2019</p>
+                        <p class="text-stone-800 font-medium mb-3">Dirección de Arte</p>
+                        <a href="https://www.imdb.com/video/vi324910617" target="_blank" class="text-xs uppercase tracking-wider text-stone-400 hover:text-stone-600 link-animated">Ver en IMDb →</a>
+                    </div>
+
+                    <div class="project-item">
+                        <h4 class="font-serif text-2xl md:text-3xl font-normal mb-2">Vea Vea</h4>
+                        <p class="text-stone-600 mb-1"><span class="text-stone-400">Videoclip</span> — Sofía Viola</p>
+                        <p class="text-stone-400 text-sm mb-2">Ciudad Autónoma de Buenos Aires — Octubre 2019</p>
+                        <p class="text-stone-800 font-medium mb-3">Co-directora y Co-directora de Arte</p>
+                        <a href="https://www.youtube.com/watch?v=qZOPmtT0OFg" target="_blank" class="text-xs uppercase tracking-wider text-stone-400 hover:text-stone-600 link-animated">Ver en YouTube →</a>
+                    </div>
+
+                    <div class="project-item">
+                        <h4 class="font-serif text-2xl md:text-3xl font-normal mb-2">Devoto, la invasión silenciosa</h4>
+                        <p class="text-stone-600 mb-1"><span class="text-stone-400">Largometraje</span> — Martín Basterretche</p>
+                        <p class="text-stone-400 text-sm mb-2">La Plata, Bs. As. — 2019</p>
+                        <p class="text-stone-800 font-medium">Asistente de Vestuario</p>
+                    </div>
+
+                    <div class="project-item">
+                        <h4 class="font-serif text-2xl md:text-3xl font-normal mb-2">Deseo en la nuca</h4>
+                        <p class="text-stone-600 mb-1"><span class="text-stone-400">Videoclip</span> — Isla Mujeres</p>
+                        <p class="text-stone-400 text-sm mb-2">La Plata, Bs. As. — Marzo 2019</p>
+                        <p class="text-stone-800 font-medium">Vestuarista</p>
+                    </div>
+
+                    <div class="project-item">
+                        <h4 class="font-serif text-2xl md:text-3xl font-normal mb-2">Cocinero</h4>
+                        <p class="text-stone-600 mb-1"><span class="text-stone-400">Videoclip</span> — El Manijazo</p>
+                        <p class="text-stone-400 text-sm mb-2">La Plata, Bs. As. — Diciembre 2017</p>
+                        <p class="text-stone-800 font-medium mb-3">Directora de Arte y Vestuarista</p>
+                        <a href="https://www.youtube.com/watch?v=FCcXxtMo2DY" target="_blank" class="text-xs uppercase tracking-wider text-stone-400 hover:text-stone-600 link-animated">Ver en YouTube →</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="px-6 md:px-12 lg:px-24 py-12 border-t border-stone-200 mt-12">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="font-serif text-xl text-stone-500">Corina /KORE/ Herran</p>
+            <div class="flex gap-6 text-sm text-stone-400">
+                <a href="mailto:corinaherran@gmail.com" class="hover:text-stone-600 transition-colors">Email</a>
+                <a href="https://www.instagram.com/koreherran/" target="_blank" class="hover:text-stone-600 transition-colors">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <button onclick="window.print()" class="no-print fixed bottom-8 right-8 bg-stone-800 text-stone-100 px-6 py-3 rounded-full shadow-lg hover:bg-stone-700 transition-all hover:scale-105 font-medium text-sm uppercase tracking-wider cursor-pointer">
+        Guardar PDF
+    </button>
+
+</body>
 </html>
